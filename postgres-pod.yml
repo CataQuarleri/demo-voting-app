@@ -9,5 +9,7 @@ spec:
   containers:
   - name: postgres
     image: postgres:9.4
+    command: [ "sleep" ]
+    args: [ "infinity" ]
     ports: 
     - containerPort: 5432
